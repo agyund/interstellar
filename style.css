@@ -1,0 +1,385 @@
+
+canvas,
+body,
+html {
+    margin: -2px;
+    background-color: black;
+}
+
+
+
+html {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: black;
+}
+
+.stem1 {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    right: 10%;
+}
+
+.stem2 {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    left: 5%;
+
+}
+
+.stem3 {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    left: 25%;
+
+}
+
+.stem4 {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    right: 25%;
+
+}
+
+.stem5 {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    right: 2%;
+
+}
+
+.stem7 {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+    animation: moving 3s ease-in-out infinite
+}
+
+.stem1,
+.stem2,
+.stem3,
+.stem4,
+.stem5 {
+    transition: all 0.2s
+}
+button{
+    color: white;
+}
+
+.imgcenter {
+    width: 25%;
+    position: relative;
+    left: 50vw;
+    top: 30vh;
+    transform: translate(-50%, -50%);
+    align-items: center;    
+}
+
+.cho {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cho1 {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.imgcenter1 {
+    width: 25%;
+    position: absolute;
+    left: 37.5%;
+}
+
+.btn {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+}
+
+.morsecode {
+    position: absolute;
+    left: 50%;
+    top: 21vh;
+    transform: translate(-50%, -20%);
+    width: 26%;
+}
+
+.ste {
+    width: 15%;
+    height: 100%;
+    opacity: 0.3;
+    transition: all 0.2s;
+}
+
+.mp3 {
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    color: white;
+}
+
+
+.text1 {
+    transform-origin: 20px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text2 {
+    transform-origin: 62px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text3 {
+    transform-origin: 106px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text4 {
+    transform-origin: 149px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text5 {
+    transform-origin: 192px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text6 {
+    transform-origin: 235px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text7 {
+    transform-origin: 278px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text8 {
+    transform-origin: 321px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text9 {
+    transform-origin: 364px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text10 {
+    transform-origin: 407px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text11 {
+    transform-origin: 450px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.text12 {
+    transform-origin: 493px;
+    animation: rotatetext 2s ease-in forwards
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75vh;
+}
+
+
+svg {
+    fill: #ffffff;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    animation: fadein 4s forwards;
+}
+
+
+
+@keyframes rotatetext {
+    0% {
+        transform: rotate3D(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+
+    100% {
+
+        transform: rotate3D(0, 1, 0, 0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tictoc {
+    0% {
+        transform-origin: left top;
+        transform: rotateZ(0deg) translate(-50%, -50%)
+    }
+
+    10% {
+        transform-origin: left top;
+        transform: rotateZ(-15deg) translate(-50%, -50%);
+    }
+
+    20% {
+        transform-origin: left top;
+        transform: rotateZ(0deg) translate(-50%, -50%);
+    }
+
+    30% {
+        transform-origin: left top;
+        transform: rotateZ(-15deg) translate(-50%, -50%);
+    }
+
+    40% {
+        transform-origin: left top;
+        transform: rotateZ(0deg) translate(-50%, -50%);
+    }
+
+    50% {
+        transform-origin: left top;
+        transform: rotateZ(-15deg) translate(-50%, -50%);
+    }
+
+    70% {
+        transform-origin: left top;
+        transform: rotateZ(-13deg) translate(-50%, -50%);
+    }
+
+    100% {
+        transform-origin: left top;
+        transform: rotateZ(0deg) translate(-50%, -50%);
+    }
+}
+
+@keyframes stretching {
+    0% {
+        transform-origin: center;
+        transform: scaleX(-1.1)
+    }
+
+    10% {
+        transform-origin: center;
+        transform: scaleX(-1)
+    }
+
+    20% {
+        transform-origin: center;
+        transform: scaleX(-1.1)
+    }
+
+    30% {
+        transform-origin: center;
+        transform: scaleX(-1)
+    }
+
+    40% {
+        transform-origin: center;
+        transform: scaleX(-1.1)
+    }
+
+    50% {
+        transform-origin: center;
+        transform: scaleX(-1)
+    }
+
+    70% {
+        transform-origin: center;
+        transform: scaleX(-1.05)
+    }
+
+    100% {
+        transform-origin: center;
+        transform: scaleX(-1.1)
+    }
+}
+
+@keyframes stemanimation {
+    0% {
+        transform-origin: center;
+        transform: scaleX(1.2)
+    }
+
+    10% {
+        transform-origin: center;
+        transform: scaleX(1)
+    }
+
+    20% {
+        transform-origin: center;
+        transform: scaleX(1.2)
+    }
+
+    30% {
+        transform-origin: center;
+        transform: scaleX(1)
+    }
+
+    40% {
+        transform-origin: center;
+        transform: scaleX(1.2)
+    }
+
+    50% {
+        transform-origin: center;
+        transform: scaleX(1)
+    }
+
+    70% {
+        transform-origin: center;
+        transform: scaleX(1.1)
+    }
+
+    100% {
+        transform-origin: center;
+        transform: scaleX(1.2)
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform-origin: center;
+        transform: scaleX(1);
+
+    }
+
+    50% {
+        transform-origin: center;
+        transform: scaleX(1.1);
+
+    }
+
+    100% {
+        transform-origin: center;
+        transform: scaleX(1);
+
+    }
+}
